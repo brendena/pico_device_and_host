@@ -177,6 +177,10 @@ uint16_t const* tud_descriptor_string_cb(uint8_t index, uint16_t langid)
 }
 
 
+//--------------------------------------------------------------------+
+// Device HID
+//--------------------------------------------------------------------+
+
 
 // Invoked when received GET HID REPORT DESCRIPTOR
 // Application return pointer to descriptor
@@ -188,9 +192,6 @@ uint8_t const * tud_hid_descriptor_report_cb(uint8_t itf)
 }
 
 
-//--------------------------------------------------------------------+
-// Device HID
-//--------------------------------------------------------------------+
 
 
 // Invoked when received SET_REPORT control request or
