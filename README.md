@@ -14,6 +14,8 @@ This is a example showing how to use the Pico-PIO-USB library
 ```bash
 mkdir build
 cd build
+git submodule init
+git submodule pull
 make -j8
 openocd -f interface/cmsis-dap.cfg -c "adapter speed 5000" -f target/rp2040.cfg -c "program USB_DEVICE_AND_KEYBOARD.elf verify reset exit"
 ```
